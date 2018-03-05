@@ -15,20 +15,30 @@ header nav{
 	border-radius: 5px;
 	margin:0 auto;
 	height: 35px;
-	margin-bottom: 2px;
+	padding-bottom: 10px;
 }
 #logo{
 	margin-top:-150px;
+}
+#seccion01 article img {
+	margin-top: 15px;
+	width: 98%;
+	border: 5px solid rgba(150,150,150,0.5);
+}
+#seccion01 article{
+	text-align: center;
 }
 
 header nav ul li{
 	color:white;
 	display: inline-block;
 	margin-right: 50px;
+	padding-bottom: 2px;
 	
 }
 header form {
 	float:right;
+	margin-bottom: 15px;	
 	margin-top: -40px;
 	margin-right: 20px;
 }
