@@ -1,0 +1,29 @@
+img[alt]{
+	border:5px solid blue;
+}
+/*imagen con atributo src cadena exacta*/
+img[src="img/logo.png"]{
+	width: 400px;
+}
+/*circunflejo*/
+/*Imagen con el atributo SRC al principio de la cadena */
+img[src=^"img/"]{
+	width: 15px;
+}
+/*Imagen con el atributo SRC al final de la cadena 
+*/img[src=$"png/"]{
+	width: 15px;
+}
+/*Imagen con el atributo SCR en cualquier parte de la cadena*/
+img[src=*"mg/"]{
+	width: 1000px;
+}
+article[class~="archivo"]{
+	border:1px solid red;
+}
+article[class~="ingles"]{
+	border:1px solid green;
+}
+article[class|="ingles"]{
+	text-align: center;
+}
