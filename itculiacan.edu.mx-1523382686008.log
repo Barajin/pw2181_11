@@ -1,0 +1,39 @@
+(index):1 This page was loaded non-securely in an incognito mode browser. A warning has been added to the URL bar. For more information, see https://goo.gl/y8SRRv.
+jquery-migrate.min.js?ver=1.4.1:2 JQMIGRATE: Migrate is installed, version 1.4.1
+stats.g.doubleclick.net/r/collect?v=1&aip=1&t=dc&_r=3&tid=UA-53463824-1&cid=967748835.1523381640&jid=287387008&_gid=526408335.1523381640&gjid=158486599&_v=j66&z=1852034799 Failed to load resource: net::ERR_CONNECTION_RESET
+document.write('Javascript :D');
+undefined
+document.write(<b>text</b>);
+VM149:1 Uncaught SyntaxError: Unexpected token <
+document.write(<b>text);
+VM156:1 Uncaught SyntaxError: Unexpected token <
+document.write("<b>text</b>");
+undefined
+document.write("<button> on click=alert(hola)</button>");
+undefined
+document.write("<button> on click=alert(hola)</button>");
+undefined
+document.write("<button> on click=alert('hola')</button>");
+undefined
+document.write("<button> onclick=alert('hola')</button>");
+undefined
+document.write("<button onclick>=alert('hola')</button>");
+undefined
+document.write("<button onclick=alert('hola')></button>");
+undefined
+doc
+VM182:1 Uncaught ReferenceError: doc is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM182:1
+document.getElementById('demo').innerHTML="hola";
+VM215:1 Uncaught TypeError: Cannot set property 'innerHTML' of null
+    at <anonymous>:1:42
+(anonymous) @ VM215:1
+document.write("<article id='demo'></article>
+VM231:1 Uncaught SyntaxError: Invalid or unexpected token
+document.write("<article id='demo'></article>);
+VM233:1 Uncaught SyntaxError: Invalid or unexpected token
+document.write("<article id='demo'></article>");
+undefined
+document.getElementById('demo').innerHTML="hola";
+"hola"
