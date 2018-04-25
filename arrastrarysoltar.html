@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Arrastrar y soltar</title>
+	<style>
+		#div2{
+			float: left;
+			border:1px solid black;
+			height: 150px;
+			margin:10px;
+			padding: 10px;
+			width: 100px;
+		}
+		#div1{
+			float: left;
+			border:1px solid black;
+			height: 150px;
+			margin:10px;
+			padding: 10px;
+			width: 100px;
+		}
+	</style>
+</head>
+<body>
+	<h2>Arrastrar y soltar</h2>	
+	<div id="div1" ondragover="allowDrop(event)" ondrop="drop(event)">
+		<img id="arrastre1" src="logo.png" heigt= "31px" width= "50px" alt="" dragable="true" ondragstart="drag(event)">
+		<img id="arrastre2" src="logo.png" heigt= "31px" width= "50px" alt="" dragable="true" ondragstart="drag(event)">
+		<img id="arrastre3" src="logo.png" heigt= "31px" width= "50px" alt="" dragable="true" ondragstart="drag(event)">
+		<img id="arrastre4" src="logo.png" heigt= "31px" width= "50px" alt="" dragable="true" ondragstart="drag(event)">
+	</div>
+	
+	<div id="div2" ondragover="allowDrop(event)" ondrop="drop(event)">
+		
+	</div>
+	<script>
+		function drop(ev){
+			ev.preventDefault();
+			var data=ev.dataTransfer.getData("text");
+			ev.target.appendChild(document.getElementById(data))
+		}
+		function allowDrop(ev){
+			ev.preventDefault();
+		}
+		function drag(ev){
+			ev.dataTransfer.setData("text",ev.target.id);
+		}
+	</script>
+	
+</body>
+</html>
