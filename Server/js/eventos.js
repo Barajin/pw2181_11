@@ -4,9 +4,10 @@ var inicioApp = function()
 {
 	var Aceptar = function(){
 		event.preventDefault();
-		var usuario=$("#txtUsuario").val();
-		var clave =$("#txtClave").val();
-		var parametros="opc=validaentrada"+"&usuario="+usuario+"&clave"+clave+"&id"+Math.random();
+		var usuario=$("#textUsuario").val();
+		var clave =$("#textClave").val();
+		var parametros="opc=validaentrada"+"&usuario="+usuario+"&clave="+clave+"&id="+Math.random();
+		
 
 
 		$.ajax({
@@ -14,7 +15,7 @@ var inicioApp = function()
 			type:"POST",
 			dataType:"json",
 			url:"php/validaentrada.php",
-			data:parametros,
+			data: parametros,
 			success:function(response){
 				if(response.respuesta == true){
 					alert("bienvenido")
