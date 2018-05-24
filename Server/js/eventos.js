@@ -19,6 +19,10 @@ var inicioApp = function()
 			success:function(response){
 				if(response.respuesta == true){
 					alert("bienvenido")
+					$("#Secinicio").hide("slow");
+					$("#frmUsuarios").show("slow");
+					$("#textUsuario").foccus();
+
 				}else{
 					alert("Usuario o clave incorrectas(s)");
 				}
@@ -31,7 +35,44 @@ var inicioApp = function()
 			}	
 		});
 	}
+	var buscaUsuario= function(){
+
+		var usuario= $("#txtNombreUsuario").val();
+		var parametros= "opc=buscaUsuario"+"&usuario"+usuario+"&aleatorio="+Math.random();
+		if(usuario !=""){
+
+		$.ajax({
+			cache:false,
+			type:"POST",
+			dataType:"json",
+			url:"php/buscaUsuario.php",
+			data: parametros,
+			success:function(response){
+				if(respose.respuesta==true){
+					$("#txtNombre").val(respose.nombre);
+					$("#txtClaveUsuario").vak(respose.clave);
+				}else{
+					$("#txtNombre").foccus();
+				}
+				
+
+			},
+
+			error:function(xhr,ajaxOptions,thrownError){
+
+
+			}	
+		});
+
+		}
+	}
+	var teclaNombreUsuario= function(tecla){
+		if(tecla.wich==13){
+			buscaUsuario();
+		}
+	}
 	$("#btnAceptar").on("click",Aceptar);
+	$("#txtNombreUsuario").om("keypress",teclaNombreUsuario);
 }
 
 
