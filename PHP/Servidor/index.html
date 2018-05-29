@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Proyecto de ejemplo: CRUD</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/eventos.js"></script>
+</head>
+
+<body>
+    <section id="secInicio">
+        Ingrese sus datos <br>
+        <input type="text" id="txtUsuario" placeholder="Usuario" autofocus class="form-control" required>
+        <input type="password" id="txtClave" placeholder="Contraseña" class="form-control" required>
+        <button class="btn btn-lg btn-primary btn-block" id="btnAceptar">Aceptar</button>
+
+    </section>
+
+    <main>
+        <section id="frmUsuarios">
+            <input type="text" id="txtNombreUsuario" class="form-control" placeholder="Usuario">
+            <input type="text" id="txtNombre" class="form-control" placeholder="Nombre">
+            <input type="text" id="txtClaveUsuario" class="form-control" placeholder="Clave">
+            <button class="btn btn-lg btn-primary" id="btnGuardar">Guardar</button>
+            <!-- <button class="btn btn-lg btn-success">Actualizar</button> -->
+            <button class="btn btn-lg btn-warning" id="btnBorrar">Borrar</button>
+            <button class="btn btn-lg btn-info">Listado</button>
+        </section>
+    </main>
+
+
+</body>
+
+</html>

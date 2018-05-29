@@ -1,0 +1,21 @@
+body {
+    background: rgb(240, 240, 240);
+    font-size: 1em;
+    margin: 0px auto;
+    max-width: 1024px;
+}
+
+input {
+    margin-bottom: 5px;
+}
+
+#frmUsuarios {
+    display: none;
+}
+
+#secInicio,
+#frmUsuarios {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 450px;
+}
